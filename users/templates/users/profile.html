@@ -1,0 +1,6 @@
+{%if user.is_authenticated%}
+    <h1>Welcome, {{user.username }}</h1>
+{%else%}
+    <h1>Kindly Login First</h1>
+{%endif%}
+<a href="{% url 'logout' %}">Logout</a>
